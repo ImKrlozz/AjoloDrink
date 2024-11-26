@@ -1,0 +1,160 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d8a56;
+}
+
+.navbar {
+    padding: 15px 30px;
+}
+
+.navbar .navbar-nav {
+    font-size: 1rem;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00;
+}
+
+.input-group input {
+    background-color: #ffffff;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.input-group input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.bi-person-circle {
+    transition: color 0.3s ease;
+}
+
+.bi-person-circle:hover {
+    color: #ffcc00;
+}
+
+.hero-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 15px;
+}
+
+.hero-section .text-content {
+    max-width: 500px;
+}
+
+.hero-section .image-content {
+    position: relative;
+    max-width: 400px;
+}
+
+.badge-custom {
+    background-color: #ffffff;
+    color: #2c2c2c;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+  
+.features-section img {
+    max-width: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.features-section img:hover {
+    transform: scale(1.1);
+}
+  
+.features-section h4 {
+    color: #2D8A56;
+    font-weight: bold;
+}
+  
+.features-section p {
+    color: #555;
+}
+
+.about-section .position-absolute {
+    font-size: 3rem;
+    color: #C8E6C9;
+    opacity: 0.3;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #FFEB00;
+}
+
+.fade-in-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  
+.about-section.visible .fade-in-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+  
+.footer-section.visible .fade-in-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+  
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+  
+.hero-section.visible .fade-in-left,
+.hero-section.visible .fade-in-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.bounce-button {
+    animation: bounce 2s infinite;
+}
+  
+.bounce-badge {
+    animation: bounce 2s infinite;
+}
+  
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+}
